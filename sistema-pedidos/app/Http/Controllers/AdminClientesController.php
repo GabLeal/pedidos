@@ -32,18 +32,18 @@
 			$this->col = [];
 			$this->col[] = ["label"=>"Nome","name"=>"name"];
 			$this->col[] = ["label"=>"CPF","name"=>"cpf"];
-			$this->col[] = ["label"=>"Rua","name"=>"street"];
-			$this->col[] = ["label"=>"Numero","name"=>"number"];
-			$this->col[] = ["label"=>"Bairro","name"=>"neighborhood"];
-			$this->col[] = ["label"=>"E-mail","name"=>"email"];
 			$this->col[] = ["label"=>"Telefone","name"=>"phone"];
+			$this->col[] = ["label"=>"E-mail","name"=>"email"];
+			$this->col[] = ["label"=>"Bairro","name"=>"neighborhood"];
+			$this->col[] = ["label"=>"Rua","name"=>"street"];
+			$this->col[] = ["label"=>"Número","name"=>"number"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Nome','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'You can only enter the letter only'];
 			$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required|min:11|max:11','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Data Nascimento','name'=>'birth_date','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Data Aniversário','name'=>'birth_date','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Rua','name'=>'street','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Número','name'=>'number','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Complemento','name'=>'complement','type'=>'text','width'=>'col-sm-10'];
@@ -60,13 +60,13 @@
 			//$this->form = [];
 			//$this->form[] = ['label'=>'Nome','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'You can only enter the letter only'];
 			//$this->form[] = ['label'=>'CPF','name'=>'cpf','type'=>'text','validation'=>'required|min:11|max:11','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Data Nascimento','name'=>'birth_date','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Data Aniversário','name'=>'birth_date','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Rua','name'=>'street','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Número','name'=>'number','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Complemento','name'=>'complement','type'=>'text','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Bairro','name'=>'neighborhood','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Cidade','name'=>'city','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Estado','name'=>'state','type'=>'select','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Estado','name'=>'state','type'=>'select','validation'=>'required|min:1|max:255','width'=>'col-sm-10','dataenum'=>'AC;AL;AM;AP;BA;CE;DF;ES;GO;MA;MT;MS;MG;PA;PB;PR;PE;PI;RJ;RN;RO;RS;RR;SC;SE;SP;TO'];
 			//$this->form[] = ['label'=>'CEP','name'=>'zip_code','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'E-mail','name'=>'email','type'=>'email','validation'=>'required|min:1|max:255|email|unique:clientes','width'=>'col-sm-10','placeholder'=>'Please enter a valid email address'];
 			//$this->form[] = ['label'=>'Telefone','name'=>'phone','type'=>'number','validation'=>'required|numeric','width'=>'col-sm-10','placeholder'=>'You can only enter the number only'];
